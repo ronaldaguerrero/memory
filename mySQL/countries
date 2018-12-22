@@ -44,6 +44,17 @@ and capital > 200
 and life_expectancy > 75;
 
 #7
+select countries.name, cities.name, cities.district, cities.population
+from countries
+left join cities
+on countries.id = cities.country_id 
+where countries.name = "Argentina" and cities.district = "Buenos Aires" and cities.population > 500000
+
+#8
+select region, count(name) as countries
+from countries
+group by region
+order by countries desc
 
 
 
