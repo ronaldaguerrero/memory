@@ -1,0 +1,29 @@
+*{
+    outline: 1px dotted red;
+}
+h2{
+    color: purple;
+    background-color: gold;
+}
+li#wash_my_car{
+    color: blue;
+    background-color: beige;
+}
+li#mow_lawn{
+    color: green;
+    background-color: yellow;
+}
+.centered_text{
+    text-align: center;
+}
+li{
+    display:inline-block;
+    height: 100px;
+    width: 75px;
+    vertical-align: top;
+    margin-left: 10px;
+    padding: 5px;
+}
+ol{
+    text-align: center;
+}

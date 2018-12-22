@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Functions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+
+    <script>
+    $(document).ready(function(){
+            // document = JQuery selector
+            // .ready = do not run function until HTML page is rendered
+            $('#red-button').click(function(){
+                $('p#red').css({"color":"red"});
+            })
+            $('#hide-button').click(function(){
+                $('p#hide').hide();
+                $('#img1').hide();
+            })
+            $('#show-button').click(function(){
+                $('p#hide').show();
+                $('#img1').show();
+            })
+            $('#toggle-button').click(function(){
+                $('p#toggle').toggle();
+            })
+            $('#slideD-button').click(function(){
+                $('#img1').slideDown("slow", function(){ //get image to hide w/out using hide button
+                });
+            })
+            $('#slideU-button').click(function(){
+                $('#img1').slideUp("slow", function(){ //get image to hide w/out using hide button
+                });
+            })
+            $('#slideT-button').click(function(){
+                $('#img2').slideToggle("slow", function(){ //get image to hide w/out using hide button
+                });
+            })
+            $('#FadeOut-button').click(function(){
+                $('#img3').fadeOut("slow", function(){ //get image to hide w/out using hide button
+                });
+            })
+            $('#FadeIn-button').click(function(){
+                $('#img3').fadeIn("slow", function(){ //get image to hide w/out using hide button
+                });
+            })
+            $('.containerC h1').addClass('selected'); //css is in style
+            $('.containerC p').addClass('highlight'); //css is in style
+            
+        })
+    </script>
+    <style>
+    .container, .containerC{
+        display: inline-block;
+        height: 170px;
+        border: 2px black solid;
+        vertical-align: top;
+        padding: 5px;
+        margin: 5px;
+    }
+    .selected {
+        color: blue;
+    }
+    .highlight {
+        background: yellow;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <button id="red-button">Red P</button>
+        <h1>Make That Red</h1>
+        <p id="red">Click the button to make id 'red' to this paragraph</p>
+    </div>
+    <div class="container">
+        <button id="hide-button">Hide P</button>
+        <h1>Hide That</h1>
+        <p id="hide">Click the button to hide id 'hide' to this paragraph</p>
+        <button id="show-button">Show P</button>
+    </div>
+    <div class="container">
+        <button id="toggle-button">Toggle</button>
+        <h1>Toggle That</h1>
+        <p id="toggle">Click the button to toggle id 'hide' to this paragraph</p>
+    </div>
+    <div class="container">
+        <button id="slideU-button">Slide Up</button>
+        <button id="slideD-button">Slide Down</button>
+        <h1>Slide That</h1>
+        <img id="img1" src="LAC.png" alt="" width="50px" height="50px">
+    </div>
+    <div class="container">
+        <button id="slideT-button">Slide Toggle</button>
+        <h1>Slide Toggle That</h1>
+        <img id="img2" src="LAR.png" alt="" width="50px" height="50px">
+    </div>
+    <div class="container">
+        <button id="FadeOut-button">FadeOut Toggle</button>
+        <button id="FadeIn-button">FadeIn Toggle</button>
+        <h1>Fade That Out</h1>
+        <img id="img3" src="DEN.jpeg" alt="" width="50px" height="50px">
+    </div>
+    <div class="containerC">
+        <h1>This classes H1 addedClass is Blue</h1>
+        <p>This classes P addedClass is highlighted Yellow</p>
+    </div>
+    <div class="container">
+        <button id="before-button">Before</button>
+        <h1>Before & After</h1>
+        <p id="#ba">Click the button to add Coding or Dojo to this paragraph</p>
+    </div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+/*CSS reset settings here*/
+*{
+    color: lightblue;
+}
+#wrapper{
+ width: 970px;
+ background-color: navy;
+ margin: 5px auto;
+ padding: 10px;
+}
+#header{
+ min-height: 75px;
+ background-color: red;
+ margin: 10px;
+}
+#navigation{
+ min-height: 300px;
+ width: 200px;
+ background-color: teal;
+ display: inline-block;
+ margin: auto;
+ margin-left: 10px;
+ margin-right: 5px;
+}
+#main_content{
+ min-height: 400px;
+ width: 700px;
+ background-color: black;
+ display: inline-block;
+ vertical-align: top;
+ padding: 5px;
+ margin: 5px;
+}
+#advertisement{
+ min-height: 120px;
+ background-color: grey;
+ margin: 10px;
+}
+a{
+  color: cyan;
+}
+li{
+    list-style-type: circle;
+}
+.round{
+border-radius: 25px;
+}

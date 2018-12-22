@@ -1,0 +1,44 @@
+#wrapper{
+    background-color: #1e90ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#topbar{
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#contents{
+    background-color: white;
+}
+
+#contents p{
+    color: red;
+}
+
+#topbar h1{
+    font-size: 50px;
+}
+
+.column{
+    width: 300px;
+    height: 700px;
+    background-color: lightgrey;
+    /* gradient */
+}
+
+.column h3{
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+.column img{
+    width: 250px;
+    height: auto;
+}
+
+.column h4{
+    background-color: rgb(65, 40, 73);
+    padding: 5px;
+}

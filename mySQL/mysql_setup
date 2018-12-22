@@ -1,0 +1,16 @@
+use twitter
+
+select * from users
+
+insert into users (first_name, last_name, handle, birthday, created_at, updated_at) 
+values ('Jeremy', 'Lin', 'itsTheRealJLin', '1988-08-23', now(), now())
+
+update tweets set tweet = 'hello world' where id = 1
+
+update tweets set updated_at = now()
+where id = 1
+
+update tweets set created_at = now()
+where id = 1
+
+delete from users where first_name='Kobe'

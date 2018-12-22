@@ -1,0 +1,116 @@
+*{
+    font-family: "sans-serif",Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.container{
+    width: 1000px;
+    min-height: 800px;
+    background-color: rgb(65, 40, 73);
+    margin: 0px auto;
+}
+
+    .container .top{
+        min-height: 60px;
+        background-color: whitesmoke;
+    }
+
+    .container .top h1{
+        width: 500px;
+        display: inline-block;
+        margin-left: 30px;
+        margin-bottom: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .container .top h2{
+        display: inline-block;
+        font-size: 25px;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .container .midsection .midimg{
+        display:inline-block;
+    }
+
+    .container .midsection .midimg img{
+        vertical-align: top;
+        margin: 10px;
+        margin-left: 40px;
+        width:440px;
+        height:290px;
+        border: 5px solid grey;
+
+    }
+
+    .container .midsection .middleright{
+        min-height: 300px;
+        width: 450px;
+        margin: 10px;
+        display: inline-block;
+        vertical-align: top;
+        background-image: linear-gradient(to right, rgb(182, 156, 190), white);
+    }
+
+    .container .midsection .middleright a{
+        padding: 10px;
+    }
+
+    .container .message{
+        display: inline-block;
+        width: 300px;    
+        min-height: 200px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 15px;
+        background-image: linear-gradient(to right, rgb(182, 156, 190), white);
+        margin-left: 20px;
+        vertical-align: top;
+    }
+
+    h3,h4{
+        background-image: linear-gradient(rgb(184, 184, 184), rgba(128, 128, 128, 0.158),rgb(184, 184, 184));
+        color: white;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .container .message .toprow img,.botrow img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .container .message p, .middleright p{
+        padding: 5px;
+    }
+
+    .container .message a{
+        display: inline-block;
+        font-size: 80%;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: green;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        margin-left: 100px;
+        text-decoration: none;
+    }
+
+    .container .bottom{
+        background-color: whitesmoke;
+        padding: 3px;
+        text-align: center;
+    }
+    .container .toprow,.botrow{
+        align-content: center;
+        margin-left: 20px;
+        padding: 7px;
+    }
+
+    .container .bottom .bot a{
+        font-style: italic;
+        margin: 0px auto;
+    }
+
