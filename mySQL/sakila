@@ -1,0 +1,46 @@
+#1
+select city.city_id, city.city, customer.first_name, customer.last_name, customer.email, address.address
+from city
+inner join address
+on city.city_id = address.city_id  
+inner join customer
+on address.address_id = customer.address_id
+where city.city_id = 312
+
+#2
+select film.film_id, film.title, film.description, film.release_year, film.rating, film.special_features, category.name
+from film
+left join film_category
+on film.film_id = film_category.film_id
+left join category
+on film_category.category_id = category.category_id
+where category.name = "Comedy"
+
+#3
+select actor.actor_id, concat(actor.first_name, " ",actor.last_name) as actor_name, film.film_id, film.title, film.description, film.release_year
+from film
+left join film_actor
+on film.film_id = film_actor.film_id
+right join actor
+on actor.actor_id = film_actor.actor_id
+where actor.actor_id = 5
+
+#4 [not done]
+select concat(customer.first_name, " ",customer.last_name) as customer_name, customer.email, address.address
+from city 
+left join address 
+on city.city_id = address.city_id
+
+#5
+SELECT film.title, film.description, film.release_year, film.rating, film.special_features
+from film
+left join film_actor
+on film.film_id = film_actor.film_id
+where film.rating = 'G'
+and film.special_features like '%Behind the Scenes%'
+and film_actor.actor_id = 15
+
+#6
+
+
+
