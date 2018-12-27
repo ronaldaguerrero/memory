@@ -71,3 +71,11 @@ from clients
 left join billing 
 on billing.client_id = clients.client_id
 order by clients.client_id 
+
+#10
+select concat(clients.first_name,' ', clients.last_name) as client_name, group_concat(sites.domain_name SEPARATOR ' / ') as sites
+from clients
+left join sites
+on clients.client_id = sites.client_id
+group by clients.client_id
+
