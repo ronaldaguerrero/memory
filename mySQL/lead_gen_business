@@ -65,4 +65,9 @@ where leads.registered_datetime between '2011-01-01' and '2011-12-31'
 group by sites.domain_name
 order by clients.client_id
 
-#9
+#9 [working]
+select concat(clients.first_name, " ", clients.last_name) as client_name, monthname(billing.charged_datetime) as month_billed, year(billing.charged_datetime) as year_billed, sum(billing.amount) as total_revenue
+from clients
+left join billing 
+on billing.client_id = clients.client_id
+order by clients.client_id 
