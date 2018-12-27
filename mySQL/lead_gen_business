@@ -26,8 +26,8 @@ where clients.client_id = 1
 group by sites.created_datetime 
 order by year desc
 
-#5 [working]
-select sites.domain_name, monthname(leads.registered_datetime), count(leads.leads_id) as '#_of_leads', year(leads.registered_datetime)
+#5
+select sites.domain_name, count(leads.leads_id) as '#_of_leads', DATE_FORMAT(leads.registered_datetime, "%M %d %Y")
 from sites
 left join leads
 on leads.site_id = sites.site_id
